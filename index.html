@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+    <div id="main-container">
+
+        <!-- INPUT AREA -->
+
+        <div id="header-text">
+            <h1>YK TIP CALCULATOR</h1>            
+        </div>
+        <div id="bill-input-div">
+            <label for="bill-input">BILL <br></label>
+            <input type="number" name="bill" id="bill-input" placeholder="BILL AMOUNT">
+        </div>
+
+        <div id="input-container">
+            <div id="tip-percentage">
+                <label for="tip-input">HOW WAS THE SERVICE <br></label>
+                <select name="select-input" id="tip-input">
+                    <option value="15">15% GOOD</option>
+                    <option value="5">5% TERRIBLE</option>
+                    <option value="10">10% BAD</option>
+                    <option value="20">20% PERFECT</option>
+                    <option value="30">30% EPIC</option>
+                </select>
+            </div>
+            <div id="people-count">
+                <label for="people-count-input">HOW MANY PEOPLE ARE YOU <br></label>
+                <input type="number" name="people-count" id="people-count-input" placeholder="HOW MANY PERSON">
+            </div>
+        </div>
+
+        <!-- INPUT AREA -->
+
+        <div id="calculate-button-div"> <!-- CALCULATE BUTTON -->
+            <button id="calculate-button">CALCULATE</button>
+        </div>
+
+        <div id="result"> <!-- RESULT TEXT -->
+            <span>TOTAL PAY CHECK IS: <span id="result-total"></span></span>
+            <span>PAY CHECK FOR EACH PERSON: <span id="result-for-each"></span></span>
+        </div>
+
+    </div>    
+
+    <script src="app.js"></script>
+</body>
+</html>
